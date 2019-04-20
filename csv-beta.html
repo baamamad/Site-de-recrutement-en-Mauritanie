@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Beta conseils - CVs</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo-beta.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="js/script-menu.js"></script>
+    <script type="text/javascript" src="js/remonter.js"></script>
+    <style>
+      form{
+        background-color: transparent;
+      }
+      input[type=search]{
+        width: 400px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 20px;
+        height: 40px;
+        font-weight: normal;
+        background-color: white;
+        background-image: url('images/searchicon.png');
+        background-size: 20px;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+      }
+
+      .recherche-cv h3{
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+      }
+      .recherche-cv form{
+        text-align: center;
+      }
+      .recherche-cv input[type=text] {
+          width: 400px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+      }
+
+      .recherche-cv input[type=button] {
+          /*background-color: #4CAF50;*/
+          background-color: blue;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+
+      }
+      .liste-cvs{
+        background:#eee;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      .cvs-by-categories{
+        margin-left: 355px;
+        margin-top: 0px!important;
+      }
+      caption{
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        font-size:1.5em;
+        background-color: yellow;
+      }
+      td,caption{
+        border: 1px solid black;
+      }
+      /*.jumbotron a{
+        color: red;
+        font-weight: bold;
+      }
+      .jumbotron a:hover{outline: none;text-decoration: none;}
+      */
+
+      .num-cv-candidat-et-references{
+        background-color: rgb(151,202,255);
+        margin: 20px;
+        padding: 1px;
+      }
+      .num-cv-candidat-et-references h4{
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .num-cv-candidat-et-references a{color: blue;}
+      .num-cv-candidat-et-references a:hover{outline: none;}
+
+      .informations-cvs{
+        background-color: #fff;
+        margin: 20px;
+        margin-top: -20px;
+        padding: 10px;
+      }
+
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        background-color: #fff;
+        font-weight: bold;
+      }
+      .pagination a.active {
+        background-color: blue;
+        font-weight: bold;
+        color: white;
+        border: 1px solid blue;
+      }
+      .pagination a:hover:not(.active) {background-color: blue;}
+      
+    </style>
+  </head>
+  <body>
+    <div class="beta">
+      <div class="subscriptions-login-search-forms col-md-12">
+        <!--<h1>BETA (Bureau d'Etudes Techniques et d'Assistance)</h1>-->
+        <form>
+          <input type="search" name="search" placeholder="Rechercher..">
+          <span class="glyphicon glyphicon-log-in"></span><a href="#" style="font-weight:bold;"> Connexion</a>
+          <span class="glyphicon glyphicon-user"></span><a href="#" style="font-weight:bold;"> Inscription</a>
+        </form>
+      </div>
+      <div class="reseaux-sociaux">
+          <h4>Suivez-nous:</h4>
+          <a href="#" class="fa fa-facebook" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-twitter" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-linkedin" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-youtube" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+      </div>
+      <div class="informations">
+        <img src="images/logo-beta.jpg" class="logo-beta">
+        <img src="images/image-beta.jpg" width="800px" height="200px" class="image-beta">
+        <div class="langue-arabe">
+          <h2><a href="#">العربية</a></h2>
+        </div>
+      </div>
+    </div> 
+    <header>
+      <nav id='cssmenu'>
+        <div class="logo"><a href="index.html">Beta Conseils </a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+          <li class='active'><a href="index.html">ACCEUIL</a></li>
+          <li><a href='#'>BETA</a>
+            <ul>
+              <li><a href="presentation.html">Présentation</a></li>
+              <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ENTREPRISES</a>
+            <ul>
+              <li><a href="annonces.html">Annonces</a></li>
+              <li><a href="recrutement.html">Recrutement</a></li>
+              <li><a href="conseils-rh.html">Conseils RH</a></li>
+            </ul>
+          </li>
+          <li><a href="#">SERVICES</a>
+            <ul>
+              <li><a href="appels-offre.html">Appels d'offres</a></li>
+              <li><a href="avis-et-infos.html">Avis et infos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CANDIDATS</a>
+            <ul>
+              <li><a href="inscription.html">Utilisateur</a></li>
+              <li><a href="offres-emploi.html">Offres d'emploi</a></li>
+              <li><a href="assistance-emploi.html">Assistance emploi</a></li>
+            </ul>
+          </li>
+          <!--<li><a href='#'>SERVICES RH</a>
+            <ul>
+              <li><a href='#'>Entreprises</a>
+                <ul>
+                  <li><a href='#'>Annonces</a></li>
+                  <li><a href='#'>Recrutement</a></li>
+                  <li><a href='#'>Conseils RH</a></li>
+                </ul>
+              </li>
+              <li><a href='#'>Candidats</a>
+                <ul>
+                  <li><a href='#'>Inscription</a></li>
+                  <li><a href='#'>Offres d'emploi</a></li>
+                  <li><a href='#'>Assistance emploi</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>-->
+          <li><a href="#">OUTILS</a>
+            <ul>
+                <li><a href="base-cv.html">Base CV</a></li>
+                <!--<li><a href="sms-emploi.html">SMS emploi</a></li>-->
+                <li><a href="tests-psychos.html">Tests Psychos</a></li>
+             </ul>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Cet espace est reservée aux recruteurs qui souhaiteraient consulter les CVs spontanés</h2>
+      <div class="recherche-cv" id="cv">
+          <form>
+            <h3>Consultation de CVs</h3>
+            <label for="search">Rechercher:</label>
+            <input type="text" name="search" placeholder="Rechercher">
+            <input type="button" value="Rechercher" style="font-weight:bold;">
+
+            <div class="cvs-by-categories">
+              <table>
+                <caption>Affichage des CVs selon des critères</caption>
+                <tr>
+                  <!--
+                  <td>
+                      <label for="pays">Pays de nationalité</label><br />
+                        <select name="pays" id="pays" style="height:35px;">
+                          <option value="afghanistan">Afghanistan</option>
+                          <option value="afrique-du-sud">Afrique du sud</option>
+                          <option value="albanie">Albanie</option>
+                          <option value="algerie">Algerie</option>
+                          <option value="allemagne">Allemagne</option>
+                          <option value="andorre">Andorre</option>
+                          <option value="angola">Angola</option>
+                          <option value="arabie-saoudite">Arabie Saoudite</option>
+                          <option value="argentine">Argentine</option>
+                          <option value="armenie">Armenie</option>
+                          <option value="australie">Australie</option>
+                          <option value="autriche">Autriche</option>
+                          <option value="bahamas">Bahamas</option>
+                          <option value="bahrein">Bahrein</option>
+                          <option value="bangladesh">Bangladesh</option>
+                          <option value="barbade">Barbade</option>
+                          <option value="belgique">Belgique</option>
+                          <option value="belize">Belize</option>
+                          <option value="benin">Bénin</option>
+                          <option value="bhoutan">Bhoutan</option>
+                          <option value="bolivie">Bolivie</option>
+                          <option value="botswana">Botswana</option>
+                          <option value="bresil">Brésil</option>
+                          <option value="bulgarie">Bulgarie</option>
+                          <option value="bourkina faso">Bourkina Faso</option>
+                          <option value="burundi">Burundi</option>
+                          <option value="cambodge">Cambodge</option>
+                          <option value="cameroun">Cameroun</option>
+                          <option value="canada">Canada</option>
+                          <option value="cap vert">Cap Vert</option>
+                          <option value="chilie">Chilie</option>
+                          <option value="chine">Chine</option>
+                          <option value="chypre">Chypre</option>
+                          <option value="colombie">Colombie</option>
+                          <option value="comores">Comores</option>
+                          <option value="coree du nord">Corée du nord</option>
+                          <option value="coree du sud">Corée du sud</option>
+                          <option value="congo">Congo</option>
+                          <option value="costa rica">Costa rica</option>
+                          <option value="cote d'ivoire">Côte d'Ivoire</option>
+                          <option value="croitie">Croitie</option>
+                          <option value="cuba">Cuba</option>
+                          <option value="danemark">Danemark</option>
+                          <option value="djibouti">Djibouti</option>
+                          <option value="dominicaine">Dominicaine</option>
+                          <option value="egypte">Egypte</option>
+                          <option value="el salvador">El Salvador</option>
+                          <option value="emirates arabes unies">UAE</option>
+                          <option value="espagne">Espagne</option>
+                          <option value="estonie">Estonie</option>
+                          <option value="etats-unis">Etats-unis</option>
+                          <option value="ethiopie">Ethiopie</option>
+                          <option value="fidji">Fidji</option>
+                          <option value="finlande">Finlande</option>
+                          <option value="france">France</option>
+                          <option value="gabon">Gabon</option>
+                          <option value="gambie">Gambie</option>
+                          <option value="ghana">Ghana</option>
+                          <option value="greece">Greece</option>
+                          <option value="grenade">Grenade</option>
+                          <option value="guatemala">Guatemala</option>
+                          <option value="guinee conakry">Guinée Conakry</option>
+                          <option value="guinee equatoriale">Guinée Equatoriale</option>
+                          <option value="guinee bissao">Guinee Bissao</option>
+                          <option value="guyane">Guyane</option>
+
+                          <option value="haiti">Haiti</option>
+                          <option value="honduras">Honduras</option>
+                          <option value="hongrie">Hongrie</option>
+                          <option value="inde">Inde</option>
+                          <option value="irak">Irak</option>
+                          <option value="iran">Iran</option>
+                          <option value="irlande">Irlande</option>
+                          <option value="islande">Islande</option>
+                          <option value="israel">Israel</option>
+                          <option value="italie">Italie</option>
+                          <option value="jamaique">Jamaique</option>
+                          <option value="japon">Japon</option>
+                          <option value="jordanie">Jordanie</option>
+                          <option value="kazakhstan">Kazakhstan</option>
+                          <option value="kenya">Kenya</option>
+                          <option value="koweit">Koweit</option>
+                          <option value="laos">Laos</option>
+                          <option value="lesotho">Lesotho</option>
+                          <option value="lettonie">Lettonie</option>
+                          <option value="liban">Liban</option>
+                          <option value="liberia">Liberia</option>
+                          <option value="lybie">Lybie</option>
+                          <option value="liecht">Liecht</option>
+                          <option value="lutianie">Lutianie</option>
+                          <option value="luxembourg">Luxembourg</option>
+                          <option value="macedoine">Macedoine</option>
+                          <option value="madagascar">Madagascar</option>
+                          <option value="malaisie">Malaisie</option>
+                          <option value="malawie">Malawie</option>
+                          <option value="maldives">Maldives</option>
+                          <option value="mali">Mali</option>
+                          <option value="malte">Malte</option>
+                          <option value="maroc">Maroc</option>
+                          <option value="maurice">Maurice</option>
+                          <option value="mauritanie" selected>Mauritanie</option>
+                          <option value="mexique">Mexique</option>
+                          <option value="moldavie">Moldavie</option>
+                          <option value="monaco">Monaco</option>
+                          <option value="mongolie">Mongolie</option>
+                          <option value="mozambique">Mozambique</option>
+                          <option value="myanmar">Myanmar</option>
+                          <option value="namimbie">Namibie</option>
+                          <option value="nepal">Nepal</option>
+                          <option value="nicaragua">Nicaragua</option>
+                          <option value="niger">Niger</option>
+                          <option value="nigeria">Nigeria</option>
+                          <option value="norvege">Norvege</option>
+                          <option value="nouvelle zelande">Nouvelle Zélande</option>
+                          <option value="oman">Oman</option>
+                          <option value="ouguanda">Ouguanda</option>
+                          <option value="ouzbekistan">Ouzbekistan</option>
+                          <option value="pakistan">Pakistan</option>
+                          <option value="palaos">Palaos</option>
+                          <option value="panamas">Panamas</option>
+                          <option value="papaouasie">Papaouasie</option>
+                          <option value="paraguay">Paraguay</option>
+                          <option value="pays-bas">Pays-bas</option>
+                          <option value="perou">Perou</option>
+                          <option value="phillipines">Phillipines</option>
+                          <option value="pologne">Pologne</option>
+                          <option value="portugal">Portugal</option>
+                          <option value="qatar">Qatar</option>
+                          <option value="rca">RCA</option>
+
+                          <option value="roumanie">Roumanie</option>
+                          <option value="royaumme unie">Royaumme unie</option>
+                          <option value="russie">Russie</option>
+                          <option value="rwanda">Rwanda</option>
+                          <option value="samoa">Samoa</option>
+                          <option value="senegal">Sénégal</option>
+                          <option value="seychelles">Seychelles</option>
+                          <option value="sierra leone">Sierra leone</option>
+                          <option value="singuapour">Singuapour</option>
+                          <option value="slovenie">Slovenie</option>
+                          <option value="slovaquie">Slovaquie</option>
+                          <option value="somalie">Somalie</option>
+                          <option value="soudan">Soudan</option>
+                          <option value="sri lanka">Sri lanka</option>
+                          <option value="suede">Suède</option>
+                          <option value="suisse">Suisse</option>
+                          <option value="suriname">Suriname</option>
+                          <option value="syrie">Syrie</option>
+                          <option value="tadjikistan">Tadjikistan</option>
+                          <option value="tanzanie">Tanzanie</option>
+                          <option value="tchad">Tchad</option>
+                          <option value="tcheque">Tcheque</option>
+                          <option value="tailande">Tailande</option>
+                          <option value="togo">Togo</option>
+                          <option value="tonga">Tonga</option>
+                          <option value="trinite et tabago">Trinite et Tabago</option>
+                          <option value="tunisie">Tunisie</option>
+                          <option value="turkimnistan">Turkimnistan</option>
+                          <option value="turquie">Turquie</option>
+                          <option value="tuvalu">Tuvalu</option>
+                          <option value="ukraine">Ukraine</option>
+                          <option value="uruguay">Uruguay</option>
+                          <option value="venezuela">Venezuela</option>
+                          <option value="viet nam">Viet Nam</option>
+                          <option value="yemen">Yemen</option>
+                          <option value="yougoslavie">Yougoslavie</option>
+                          <option value="zambie">Zambie</option>
+                          <option value="zimbabwe">Zimbabwe</option>
+                        </select>
+                  </td>-->
+                  <td>
+                      <label for="sexe">Sexe</label><br />
+                      <select name="sexe" id="sexe" style="width:150px;height:35px;">
+                        <option value="vide"></option>
+                        <option value="masculin">Masculin</option>
+                        <option value="feminin">Feminin</option>
+                      </select>
+                  </td>
+                  <td>
+                    <label for="specialite">Spécialité</label><br />
+                    <select name="specialite" id="specialite" style="width:100%;height:35px;">
+                      <option value="vide"></option>
+                      <option value="achats">Achats</option>
+                      <option value="administration">Administration</option>
+                      <option value="agriculture">Agriculture</option>
+                      <option value="agro-alimentaire">Agro-alimentaire</option>
+                      <option value="architecture">Architecture</option>
+                      <option value="assurance">Assurance</option>
+                      <option value="audiovisuel">Audiovisuel</option>
+                      <option value="audit">Audit</option>
+                      <option value="banque">Banques</option>
+                      <option value="beaute">Beauté</option>
+                      <option value="biologie">Biologie</option>
+                      <option value="btp">BTP</option>
+                      <option value="chantier">Chantier</option>
+                      <option value="chimie">Chimie</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="communications">Communications</option>
+                      <option value="comptabilite">Comptabilité</option>
+                      <option value="culture">Culture</option>
+                      <option value="decoration-art">Décoration Art</option>
+                      <option value="design">Design</option>
+                      <option value="distribution">Distribution</option>
+                      <option value="documentation">Documentation</option>
+                      <option value="droit">Droit</option>
+                      <option value="economie">Economie</option>
+                      <option value="education">education</option>
+                      <option value="electricite">Electricité</option>
+                      <option value="electronique">Electronique</option>
+                      <option value="energie">Energie</option>
+                      <option value="environnement">Environnement</option>
+                      <option value="enseignement">Enseignement</option>
+                      <option value="finances">Finances</option>
+                      <option value="fiscalite">Fiscalite</option>
+                      <option value="formation">Formation</option>
+                      <option value="genie-civil">Génie-civil</option>
+                      <option value="geologie-minier">Geologie minier</option>
+                      <option value="gestion">Gestion</option>
+                      <option value="graphisme">Graphisme</option>
+                      <option value="hotellerie">Hotellerie</option>
+                      <option value="hydrolique">Hydrolique</option>
+                      <option value="infographie">Infographie</option>
+                      <option value="informatique">Informatique</option>
+                      <option value="internet">Internet</option>
+                      <option value="journalisme">Journalisme</option>
+                      <option value="logistique">Logistique</option>
+                      <option value="maintenance">Maintenance</option>
+                      <option value="marketing">Marketing</option>
+                      <option value="mecanique">Mecanique</option>
+                      <option value="medical">Medical</option>
+                      <option value="media">Media</option>
+                      <option value="metallurgie">Métallurgie</option>
+                      <option value="mines">Mines</option>
+                      <option value="mode">Mode</option>
+                      <option value="pharmacie">Pharmacie</option>
+                      <option value="production">Production</option>
+                      <option value="publicite">Publicité</option>
+                      <option value="qualite">Qualité</option>
+                      <option value="recherche-et-developpement">Recherche & Développement</option>
+                      <option value="relation-presse">Relation presse</option>
+                      <option value="ressources-humaines">Ressources Humaines</option>
+                      <option value="restauration">Restauration</option>
+                      <option value="sante">Santé</option>
+                      <option value="secretariat">Secrétariat</option>
+                      <option value="securite">Sécurité</option>
+                      <option value="socio-culturelle">Socio-culturelle</option>
+                      <option value="sport">Sport</option>
+                      <option value="statistiques">Statistiques</option>
+                      <option value="telecoms">Telecoms</option>
+                      <option value="tourisme">Tourisme</option>
+                      <option value="traduction">Traduction</option>
+                      <option value="transport">Transport</option>
+                      <option value="urbanisme">Urbanisme</option>
+                      <option value="vente">Vente</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=4>
+                    <input type="button" value="Valider" style="font-weight:bold;width:100%;">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+      </div>
+
+      <div class="liste-cvs">
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>  
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>        
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>  
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>        
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>         
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>        
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>        
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>  
+
+        <div class="cv-candidat">
+          <div class="num-cv-candidat-et-references">
+            <h4 style="font-weight:bold;color:blue;">Numéro:00124</h4>
+            <h4 style="font-weight:bold;">Titre du diplôme: Diplôme Ingénieur en informatique</h4>
+            <h4 style="font-weight:bold;"><a href="affiche-profil-candidat.html">Afficher le profil</a></h4>
+          </div>
+          <div class="informations-cvs">
+            <h5>Spécialité: Informatique</h5>
+            <h5>Sexe: Masculin</h5>
+          </div>
+        </div>  
+
+        <div class="center">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>                       
+      </div>
+    </div>
+
+    <div class="button-top">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color: transparent;"><img src="images/navigate_up.png" width="40px;" style="border-radius:10px;"></button>
+    </div>
+
+    <div class="footer-menu col-sm-12">
+      <div class="menu-navigation col-md-3">
+          <ul>
+            <h4>Navigation</h4>
+            <a href="presentation.html">Présentation</a><br>
+            <a href="a-propos.html">A propos</a><br>
+            <a href="base-cv.html">Base CV</a><br>
+            <a href="tests-psychos.html">Tests psychos</a><br>
+            <a href="appels-offre.html">Appels d'offres</a><br>
+            <a href="avis-et-infos.html">Avis et infos</a><br>
+          </ul>          
+      </div>
+      <div class="menu-conseils-rh col-md-3">
+          <ul>
+            <h4>Services RH</h4>
+            <a href="annonces.html">Annonces</a><br>
+            <a href="recrutement.html">Recrutement</a><br>
+            <a href="conseils-rh.html">Conseils RH</a><br>
+            <a href="inscription.html">Utilisateur</a><br>
+            <a href="offres-emploi.html">Offres d'emploi</a><br>
+            <a href="assistance-emploi.html">Assistance emploi</a><br>
+          </ul>
+      </div>
+      <div class="reseaux-sociaux col-md-3">
+          <h4>Suivez-nous:</h4>
+          <a href="#" class="fa fa-facebook" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-twitter" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-linkedin" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+          <a href="#" class="fa fa-youtube" style="padding: 20px;font-size: 30px;text-align: center;text-decoration: none;margin: 5px 2px;width:100px;"></a>
+      </div>
+      <div class="contacts col-md-3">
+        <h4>Contacts</h4>
+        <p>Adresse: Ilot T, lot 48, Avenue Charles De Gaule</p>
+        <p><i class="fa fa-phone" style="font-size:16px"></i> Tél: (222) 45 25 79 15 </p>
+        <p><a href="contact.html#formulaire-contact" style="color:black;"><i class="fa fa-envelope" style="font-size:16px"></i> Envoyez-nous un message</a></p>
+        <p><a href="contact.html#plan-acces" style="color:black;"><span class="glyphicon glyphicon-map-marker" style="font-size:16px"></span> Retrouvez-nous sur la carte</a></p>
+      </div>
+    </div>
+    <div class="footer-copyright col-md-12">
+      <div class="copyright col-md-6">
+        <p><span class="glyphicon glyphicon-copyright-mark"></span> Copryright - 2018 - BETA Conseils. Droits réservés</p>
+      </div>
+      <div class="some-informations">
+        <ul>
+          <li><a href="#" class="conditions">Conditions d'utilisations</a></li>
+          <li><a href="#" class="mentions">Mentions légales</a></li>
+          <li><a href="inscription.html#formulaire-connexion" class="connexion">Connexion</a></li>
+          <li><a href="inscription.html#formulaire-inscription" class="inscription">Inscription</a></li>
+        </ul>
+      </div>
+    </div>  
+  </body>
+</html>
+        
+
+
+

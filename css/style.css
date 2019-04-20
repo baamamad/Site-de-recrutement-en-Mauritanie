@@ -1,0 +1,848 @@
+/*.beta-title{
+	background-color: rgb(151,202,255);
+	text-align: center;
+	padding: 5px;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 25px;
+}
+*/
+.subscriptions-login-search-forms{
+	background-color: rgb(151,202,255);
+	text-align: right;
+	/*padding: -5px!important;*/
+	height: 50px;
+	display: inline-block;
+	word-spacing: 7px;
+}
+.subscriptions-login-search-forms form{
+	margin-top: -15px;
+}
+
+.subscriptions-login-search-forms a{
+	color: black;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+
+.subscriptions-login-search-forms a:hover,a:focus{
+	text-decoration: none;
+	outline: none;
+}
+
+
+.informations h1{text-align: center;margin-top: 65px;}
+
+.beta{
+	background-color: #fff;
+	height: 320px;
+}
+header #cssmenu{
+	margin-top: 0px!important;
+}
+.beta .reseaux-sociaux{
+	display: none;
+}
+/*.beta-title h3{
+	margin-top: 10px;
+}
+*/
+.langue-arabe h2{
+	text-align: right;
+	margin-right: 5px;
+	font-weight: bold;
+	margin-top: -170px;
+	font-size: 80px;
+}
+.langue-arabe a{
+	color: black;
+	text-decoration: none;
+}
+.informations img{
+	margin: 20px;
+	margin-left: 55px;
+}
+
+#cssmenu{
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.container{margin-top: 100px;}
+
+*{margin:0;padding:0;text-decoration:none}
+body{background:/*#fff;*/#E7EFF7;}
+/*background-color: rgb(40,148,255); */
+header{position:relative;width:100%;background:rgb(151,202,255);}
+.logo{position:relative;z-index:123;padding:10px;font:18px verdana;color:#6DDB07;float:left;width:15%}
+.logo a{color:#fff;display: none;}
+nav{position:relative;width:980px;margin:0 auto;}
+
+#cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{
+	border:0;
+	list-style:none;
+	line-height:1;
+	display:block;
+	position:relative;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+#cssmenu:after,#cssmenu > ul:after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0
+}
+#cssmenu #head-mobile{display:none}
+#cssmenu{font-family:sans-serif;background:rgb(151,202,255);}
+#cssmenu > ul > li{float:left}
+#cssmenu > ul > li > a{padding:17px;
+	font-size:12px;
+	letter-spacing:1px;
+	text-decoration:none;
+	color:black;
+	font-weight:700;
+}
+#cssmenu > ul > li:hover > a,#cssmenu ul li.active a{color:black;}
+#cssmenu > ul > li:hover,#cssmenu ul li.active:hover,#cssmenu ul li.active,#cssmenu ul li.has-sub.active:hover{
+	background:#fff!important;
+	-webkit-transition:background .3s ease;
+	-ms-transition:background .3s ease;
+	transition:background .3s ease;
+}
+#cssmenu > ul > li.has-sub > a{padding-right:30px}
+#cssmenu > ul > li.has-sub > a:after{position:absolute;
+	top:22px;
+	right:11px;
+	width:8px;
+	height:2px;
+	display:block;
+	background:#fff;
+	content:''
+}
+#cssmenu > ul > li.has-sub > a:before{
+	position:absolute;
+	top:19px;
+	right:14px;
+	display:block;
+	width:2px;
+	height:8px;
+	background:#fff;
+	content:'';
+	-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	transition:all .25s ease
+}
+#cssmenu > ul > li.has-sub:hover > a:before{
+	top:23px;
+	height:0
+}
+#cssmenu ul ul{position:absolute;
+	left:-9999px;
+}
+#cssmenu ul ul li{
+	height:0;
+	-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	background:#fff;
+	transition:all .25s ease
+}
+#cssmenu ul ul li:hover{
+	background: rgb(151,202,255);
+}
+#cssmenu li:hover > ul{left:auto}
+#cssmenu li:hover > ul > li{height:35px}
+#cssmenu ul ul ul{margin-left:100%;top:0}
+#cssmenu ul ul li a{border-bottom:1px solid rgb(151,202,255);
+	padding:11px 15px;
+	width:170px;
+	font-size:12px;
+	text-decoration:none;
+	color:black;/*font-weight:400;*/
+	font-weight:bold;
+}
+#cssmenu ul ul li:last-child > a,#cssmenu ul ul li.last-item > a{
+	border-bottom:0
+}
+#cssmenu ul ul li:hover > a,#cssmenu ul ul li a:hover{color:black}
+#cssmenu ul ul li.has-sub > a:after{position:absolute;
+	top:16px;
+	right:11px;
+	width:8px;
+	height:2px;
+	display:block;
+	background:rgb(151,202,255);
+	content:''
+}
+#cssmenu ul ul li.has-sub > a:before{
+	position:absolute;
+	top:13px;
+	right:14px;
+	display:block;
+	width:2px;
+	height:8px;
+	background:rgb(151,202,255);
+	content:'';
+	-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	transition:all .25s ease
+}
+#cssmenu ul ul > li.has-sub:hover > a:before{top:17px;height:0}
+#cssmenu ul ul li.has-sub:hover,#cssmenu ul li.has-sub ul li.has-sub ul li:hover{background:rgb(151,202,255);}
+#cssmenu ul ul ul li.active a{border-left:1px solid black;}
+#cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active> a{border-top:1px solid black}
+
+@media screen and (max-width:1000px){
+	.langue-arabe h2{margin-right: 45px;}
+	.logo a{
+		display: block;
+	}
+	.beta .reseaux-sociaux{
+		display: block;
+		padding-left: 4px;
+		text-align: center;
+	}
+	.beta .reseaux-sociaux h4{
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.logo{position:absolute;
+		top:0;
+		left: 0;
+		width:100%;
+		height:46px;
+		text-align:center;
+		padding:10px 0 0 0 ;
+		float:none
+	}
+	.logo2{display:none}
+	nav{width:100%;}
+	#cssmenu{width:100%}
+	#cssmenu ul{width:100%;display:none}
+	#cssmenu ul li{width:100%;border-top:1px solid rgb(151,202,255);}
+	#cssmenu ul li:hover{background:#363636;}
+	#cssmenu ul ul li,#cssmenu li:hover > ul > li{height:auto}
+	#cssmenu ul li a,#cssmenu ul ul li a{width:100%;border-bottom:0}
+	#cssmenu > ul > li{float:none}
+	#cssmenu ul ul li a{padding-left:25px}
+	#cssmenu ul ul li{background:#fff;!important;}
+	#cssmenu ul ul li:hover{background:rgb(151,202,255)!important}
+	#cssmenu ul ul ul li a{padding-left:35px}
+	#cssmenu ul ul li a{color:black;background:none;font-weight: bold;}
+	#cssmenu ul ul li:hover > a,#cssmenu ul ul li.active > a{color:black}
+	#cssmenu ul ul,#cssmenu ul ul ul{
+		position:relative;
+		left:0;
+		width:100%;
+		margin:0;
+		text-align:left
+	}
+	#cssmenu > ul > li.has-sub > a:after,#cssmenu > ul > li.has-sub > a:before,#cssmenu ul ul > li.has-sub > a:after,#cssmenu ul ul > li.has-sub > a:before{display:none}
+	#cssmenu #head-mobile{display:block;padding:23px;color:black;font-size:12px;font-weight:700}
+	.button{width:55px;
+		height:46px;
+		position:absolute;
+		right:0;top:0;
+		cursor:pointer;
+		z-index: 12399994;
+	}
+	.button:after{
+		position:absolute;
+		top:22px;
+		right:20px;
+		display:block;
+		height:4px;
+		width:20px;
+		border-top:2px solid black;
+		border-bottom:2px solid black;
+		content:''
+	}
+	.button:before{
+		-webkit-transition:all .3s ease;
+		-ms-transition:all .3s ease;
+		transition:all .3s ease;
+		position:absolute;
+		top:16px;
+		right:20px;
+		display:block;
+		height:2px;
+		width:20px;
+		background:black;
+		content:''
+	}
+	.button.menu-opened:after{
+		-webkit-transition:all .3s ease;
+		-ms-transition:all .3s ease;
+		transition:all .3s ease;
+		top:23px;
+		border:0;
+		height:2px;
+		width:19px;
+		background:black;
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		transform:rotate(45deg)
+	}
+	.button.menu-opened:before{
+		top:23px;
+		background:black;
+		width:19px;
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-o-transform:rotate(-45deg);
+		transform:rotate(-45deg)
+	}
+	#cssmenu .submenu-button{
+			position:absolute;
+			z-index:99;
+			right:0;
+			top:0;
+			display:block;
+			border-left:1px solid rgb(151,202,255);
+			height:46px;
+			width:46px;
+			cursor:pointer
+	}
+		#cssmenu .submenu-button.submenu-opened{background:#fff;}
+		#cssmenu ul ul .submenu-button{height:34px;width:34px}
+		#cssmenu .submenu-button:after{
+			position:absolute;
+			top:22px;
+			right:19px;
+			width:8px;
+			height:2px;
+			display:block;
+			background:black;
+			content:''
+		}
+		#cssmenu ul ul .submenu-button:after{top:15px;right:13px}
+		#cssmenu .submenu-button.submenu-opened:after{background:black;}
+		#cssmenu .submenu-button:before{
+			position:absolute;
+			top:19px;
+			right:22px;
+			display:block;
+			width:2px;
+			height:8px;
+			background:black;
+			content:''
+		}
+		#cssmenu ul ul .submenu-button:before{top:12px;right:16px}
+		#cssmenu .submenu-button.submenu-opened:before{display:none}
+		#cssmenu ul ul ul li.active a{border-left:none}
+		#cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}
+		.footer-menu{
+			display: none;
+		}
+		.image-beta{
+			display: none;
+		}
+		.langue-arabe a{
+			margin-right: -45px;
+		}
+		.langue-arabe{
+			padding-top: 50px;
+		}
+		#cssmenu{
+			margin-top: -40px;
+		}
+		.conditions a:hover{
+			font-weight: normal;
+
+		}
+
+		.offres{margin-top: 50px;background: gray;}
+
+		.a-propos-beta-conseils, .a-propos-space-publicitaire, .presentation-beta-conseils, .presentation-space-publicitaire, .inscription-beta-conseils, .inscription-space-publicitaire{
+			left: 0px!important;
+			right: 0px!important;
+		}
+
+		.some-informations{
+			padding-right: 37px;
+		}
+		.map-beta-conseils img{
+			width: 400px;
+		}
+		.avis-et-infos{
+			margin-bottom: 10px;
+		}
+		.offres-emploi-et-consultants .offres-emploi-titre h4{
+			padding-top: 5px;
+		}
+		.offre-emploi-entreprise-right{
+			margin-top: 10px;
+		}
+		.offre-emploi-entreprise-left{
+			margin-left: 0px!important;
+		}
+		.offre-emploi-entreprise-right{
+			margin-left: 0px!important;
+		}
+		.espace-employeur-et-candidats form{
+			margin: 10px;
+		}
+		.espace-employeur-et-candidats{
+			margin-bottom: 10px;
+		}
+		.offres-emploi-liste{
+			bottom: 5px;
+		}
+		.liste h4{
+			margin-top: -5px;
+		}
+
+		/*
+		span.psw {
+       		display: block;
+       		float: none;
+    	}
+    	.cancelbtn {
+       		width: 50%;
+    	}
+		*/
+		.recherche-cv{
+			margin-bottom: 10px;
+		}
+		.recherche-cv input[type=text] {width: 100%;}.recherche-cv input[type=button] {width: 100%;}
+		.cvs-by-categories{margin-left: 0px!important;}
+		.recherche-cv table{
+			margin-top: 10px;
+			margin-left: 25px;
+		}
+		.liste-cvs{margin-bottom: 10px;}
+		.cv-candidat{margin-bottom: 10px;}
+		.map-beta-conseils iframe{width: 100%;}
+
+		.button-top{
+			display: none;
+		}
+		/*.subscriptions-longin-search-forms{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		*/
+		/*header #cssmenu{
+			margin-top: 30px;
+		}*/
+		.beta{height: 400px;}
+		.subscriptions-login-search-forms span{display: none;}
+		.subscriptions-login-search-forms a{display: none;}
+		.subscriptions-login-search-forms{width: 100%;text-align: center;}
+		.some-informations {text-align: left;margin-left: 15px;}
+		.cv-candidat input[type=submit] {font-size: 1.2em;}
+		
+		/*.espace-employeur-et-candidat{padding-right: 0px!important;}
+		.espace-employeur{margin-left: 0px!important;}
+		.espace-candidat{margin-left: 0px!important;}
+		.espace-employeur .boutons p{margin-bottom: -10px;}
+
+		
+		.espace-employeur-et-candidat{margin-bottom: 10px;}
+
+		.offre-emploi-entreprise-right img{margin-top: -5px;}
+		.offre-emploi-entreprise-right h4{margin-top: 5px;}
+		.offre-emploi-entreprise-left img{margin-top: 5px;margin-left: -10px;}
+		.offre-emploi-entreprise-left h4{margin-top: 15px;}*/
+
+		.espace-candidat{margin-left: 0px!important;margin-top: 5px;}
+		.espace-employeur{margin-left: 0px!important;}
+		.espace-employeur-et-candidat{margin-bottom: 10px;}
+		.offres-emploi{margin-top: 5px;}
+		.avis-et-infos{margin-top: 5px;}
+		.offre-emploi-entreprise-right{border: 5px solid rgb(151,202,255);margin-bottom: 5px;/*margin-right: -20px;*/}
+		.offre-emploi-entreprise-left{border: 5px solid rgb(151,202,255);margin-top: 10px;}
+		/*.offre-emploi-entreprise-right{margin-right: -20px;}*/
+		
+	}
+	@media screen and (max-width:450px){
+		body{margin: 0;}
+		.informations{margin-top: -30px;}
+		.informations .logo-beta{margin-left: 0px!important;}
+		.informations .langue-arabe{margin-top: -5px;}
+		.reseaux-sociaux{margin-bottom: 5px;}
+		.subscriptions-login-search-forms input{max-width: 100%;}
+		.boutons form{font-size: 10px;}
+		.appels-offres, .offres-emploi, .avis-et-infos, .espace-employeur-et-candidat{margin-left: -30px;margin-right: -30px;}
+		.appels-offres-title h4{font-family: }
+		.espace-employeur .boutons p{margin-bottom: -10px;}
+		.container h1{font-size: 1.5em;}
+
+		.offres-emploi .offre-emploi-entreprise-left{border: none;/*border-top: 5px solid rgb(151,202,255);border-bottom: 5px solid rgb(151,202,255);*/}
+		.offres-emploi .offre-emploi-entreprise-right{border: none;/*border-top: 5px solid rgb(151,202,255);border-bottom: 5px solid rgb(151,202,255);*/}
+
+		.offre-emploi-entreprise-left h4,.offre-emploi-entreprise-right h4{margin-top: 10px;}
+
+		.offre-emploi-entreprise-left img{margin-top: -10px;margin-left: -15px;}
+		.offre-emploi-entreprise-left h4{margin-top: 0px!important;}
+		.offre-emploi-entreprise-left h6{margin-left: -15px;}
+
+		.offre-emploi-entreprise-right img{margin-top: -10px;margin-left: -15px;}
+		.offre-emploi-entreprise-right h4{margin-top: 0px!important;}
+		.offre-emploi-entreprise-right h6{margin-left: -15px;}
+
+		.offre-emploi-entreprise-right{}
+		.offres-emploi-title span{margin-left: -75px;}
+		
+	}
+
+	.container h1{
+		text-align: center;
+		font-weight: bold;
+		margin-top: 30px;
+		color: red;
+	}
+
+	.footer-menu{
+		text-align: center;
+		background-color: #fff; 
+		height: 250px;
+		border-top: 10px solid rgb(151,202,255);
+		margin-top: 10px;
+		}
+	.footer-menu ul a,p,h4{
+		color: black;
+	}
+	.footer-menu h4{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.footer-copyright{
+		background-color: rgb(151,202,255);
+		padding: 10px;	
+		text-align: right;
+	}
+	.footer-copyright p{
+		text-align: left;
+		color: black;
+		font-weight: bold;
+	}
+	.footer-copyright a{
+		color: black;
+		text-decoration: none;
+	}
+	.some-informations ul li{
+		list-style-type: none;
+		display: inline-block;
+	}
+	.some-informations a{
+		padding: 2px;
+	}
+	.some-informations a:hover{
+		text-decoration: underline;
+		/*font-weight: bold;*/
+	}
+
+
+
+	/*.conditions {
+		border-right: 1px solid #fff;
+	}
+	.mentions {
+		border-right: 1px solid #fff;
+	}
+	.connexion {
+		border-right: 1px solid #fff;
+	}
+	*/
+
+
+.fa:hover {
+    /*opacity: 0.7;*/
+    text-decoration: none;
+
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.contacts a{
+	color: #fff;
+}
+/*.contacts a:hover{
+	text-decoration: none;
+}
+*/
+
+
+/*
+
+/*Page A propos*/
+.a-propos-beta, .presentation-beta{
+	padding: 10px;
+	
+}
+.a-propos-beta-conseils, .presentation-beta-conseils{
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 15px;
+	right: 5px;
+}
+.a-propos-beta-conseils h3, .presentation-beta-conseils h3{
+	font-weight: bold;
+	color: blue;
+	text-decoration: underline;
+}
+.a-propos-beta-conseils, .a-propos-space-publicitaire, .presentation-beta-conseils, .presentation-space-publicitaire{
+	background-color: rgb(151,202,255);
+	border-radius: 10px;
+}
+
+.a-propos-entreprises-et-candidats h4{
+	font-weight: bold;
+	font-size: 20px;
+	color: blue;
+}
+.a-propos-entreprises-et-candidats li a{
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+}
+.a-propos-entreprises-et-candidats li a:hover{
+	color: red;
+}
+/*.presentation-entreprises .presentation-candidats, li{
+	margin-left: 15px;
+}
+*/
+.a-propos-space-publicitaire, .presentation-space-publicitaire{
+	margin-top: 10px;
+	left: 5px;
+	height: 350px;
+	padding: 10px;
+	background-color: gray;
+}
+
+.name-space-pub{
+	background-color: rgb(215,208,238);
+	padding: 5px;
+	border-bottom: 5px solid black;
+}
+
+.name-space-pub h4{
+	text-transform: capitalize;
+	text-align: center;
+}
+.content-space-pub{
+	padding: 10px;
+	background-color: rgb(111,183,255);
+	height: 250px;
+}
+
+/*Page présentation Beta*/
+.presentation-beta-conseils{
+	font-size: 14px;
+}
+.presentation-beta-conseils li{
+	margin-left: 20px;
+}
+
+/*Page recrutements */
+/*Page contact*/
+.sending-msg-beta-conseils h4, .map-beta-conseils h4{
+	font-weight: bold;
+	color: blue;
+	font-style: italic;
+}
+.map-beta-conseils img{
+	margin-top: 10px;
+}
+.sending-msg-beta-conseils p{
+	font-weight: bold;
+}
+
+/*Page ACCUEIL*/
+.appels-offres-title h4{text-align: center;}
+.offres-emploi-title h4{/*text-align: center;*/display: inline-block;}
+.avis-et-infos-title h4{text-align: center;}
+
+/*.offres{border: 5px solid rgb(151,202,255);}*/
+.appels-offres{border: 5px solid rgb(151,202,255);/*9,181,255*/}
+.offres-emploi{border: 5px solid rgb(151,202,255);}
+.avis-et-infos{border: 5px solid rgb(151,202,255);}
+
+/*.appels-offres-title{border-bottom: 5px solid rgb(151,202,255);margin-left: -20px;margin-right: -20px;margin-bottom: -10px;}*/
+
+/*.appels-offres-title{border-bottom: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+.offres-emploi-title{border-bottom: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}*/
+
+.appel-offre-entreprise{border-top: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+.liste{border-top: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+.offres-emploi-liste{border-bottom: 5px solid rgb(151,202,255);}
+.avis-et-infos-entreprise{border-top: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+
+.informations-entreprises h4{max-height: 15px;/*overflow: auto;*/font-size: 1em;font-weight: bold;}
+.informations-entreprises h5{max-height: 15px;/*overflow: auto;*/font-weight: bold;}
+.offre-emploi-entreprise-left h4{max-height: 15px;/*overflow: auto;*/font-size: 1em;font-weight: bold;}
+.offre-emploi-entreprise-left h5{max-height: 15px;/*overflow: auto;*/font-weight: bold;}
+.offre-emploi-entreprise-right h4{max-height: 15px;/*overflow: auto;*/font-size: 1em;font-weight: bold;}
+.offre-emploi-entreprise-right h4{max-height: 15px;/*overflow: auto;*/font-size: 1em;font-weight: bold;}
+.offre-emploi-entreprise-right h5{max-height: 15px;/*overflow: auto;*/font-weight: bold;}
+
+.appels-offres-liste-complete{border-top: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+.avis-et-infos-liste-complete{border-top: 5px solid rgb(151,202,255);margin-left: -15px;margin-right: -15px;}
+.offres-emploi-liste-complete{padding: 10px;}
+
+.appels-offres-liste-complete h4{text-align: center;}
+.avis-et-infos-liste-complete h4{text-align: center;}
+.offres-emploi-liste-complete h4{text-align: center;}
+
+.offre-emploi-entreprise-right{border-left: 5px solid rgb(151,202,255);}
+
+.informations-entreprises{padding: 10px;}
+.offre-emploi-entreprise-right{padding: 10px;}
+.offre-emploi-entreprise-left{padding: 10px;}
+
+.informations-entreprises img{float: left;margin-right: 5px;}
+.offre-emploi-entreprise-right img{float: left;margin-right: 5px;}
+.offre-emploi-entreprise-left img{float: left;margin-right: 5px;}
+
+.espace-employeur-et-candidat{border: 5px solid rgb(151,202,255);padding: 10px;}
+.espace-employeur{border: 5px solid rgb(151,202,255);text-align: center;/*margin-left: -5px;*/}
+.espace-candidat{border: 5px solid rgb(151,202,255);text-align: center;/*margin-left: 5px;*/}
+.nom-espace-employeur, .nom-espace-candidat{border: 5px solid rgb(151,202,255);margin-top: 5px;}
+.nom-espace-employeur h3, .nom-espace-candidat h3{margin-top: 5px;text-transform: uppercase;font-weight: bold;color: red;}
+.espace-candidat .boutons p{margin-bottom: -10px;}
+
+/*Inscription*/
+.inscription-beta{
+	padding: 10px;
+	
+}
+.inscription-beta-conseils{
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 15px;
+	right: 5px;
+}
+.inscription-beta-conseils h3{
+	font-weight: bold;
+	color: blue;
+	text-decoration: underline;
+}
+.inscription-beta-conseils, .inscription-space-publicitaire{
+	background-color: rgb(151,202,255);
+	border-radius: 10px;
+}
+.inscription-space-publicitaire{
+	margin-top: 10px;
+	left: 5px;
+	height: 350px;
+	padding: 10px;
+	background-color: gray;
+}
+/*.inscription-beta-conseils{
+	font-size: 14px;
+}
+.inscription-beta-conseils li{
+	margin-left: 20px;
+}
+*/
+
+form .btn, .btn:hover{
+	background-color: blue;
+	color: #fff;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+form{
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 10px;
+}
+form p{
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+form a{
+	text-transform: uppercase;
+
+}
+form label{
+	font-weight: bold;
+}
+
+
+.map-beta-conseils img{
+	display: none;
+}
+
+
+
+
+/*Pagination*/
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+.pagination a.active {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+.pagination a:hover:not(.active) {background-color: blue;color: #fff;}
+
+#myBtn {
+          display: none;
+          position: fixed;
+          bottom: 50px;
+          right: 10px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          /*background-color: red;*/
+          /*color: white;*/
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+
+.informations-entreprises h4,.offre-emploi-entreprise-right h4,.offre-emploi-entreprise-left h4{font-size: 0.9em;margin-top: 1px;}
+.informations-entreprises h5,.offre-emploi-entreprise-right h5,.offre-emploi-entreprise-left h5{margin-top: 5px;}
